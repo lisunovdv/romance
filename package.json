@@ -10,11 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "normalize-scss": "^7.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-debug": "^3.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
   }
 }
