@@ -6,6 +6,13 @@
 	}
 }
 
+.logo-image {
+    @include media-breakpoint-down(xs) {
+	    width: 100px;
+	    height: auto;
+    }
+}
+
 .logo-link {
 	text-decoration: none;
 	float: left;
@@ -19,7 +26,10 @@
 .member-block {
 	float: right;
 	margin-right: 1rem;
-	margin-top: 12px;
+	margin-top: 6px;
+	@include media-breakpoint-up(sm) {
+		margin-top: 12px;
+	}
 	@include media-breakpoint-up(md) {
 		margin-right: 72px;
 	}
@@ -32,4 +42,9 @@
 .login-link {
 	font-size: 18px;
 	color: #6bc0ea;
+	transition: color $time;
+
+	&:hover {
+		color: $brand-color;
+	}
 }

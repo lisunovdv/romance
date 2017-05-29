@@ -1,12 +1,112 @@
 .forms-wrapper {
-    padding-top: 48px;
-}
-
-.text-input {
-	background-image: none;
-    background-clip: padding-box;
+    //padding-top: 26px;
 }
 
 .form-row {
+	margin: 0 0 20px;
+}
 
+.text-input {
+    padding: 13px 20px;
+    width: 100%;
+    letter-spacing: 0.75px;
+    border-radius: $border-radius;
+	background-image: none;
+    background-clip: padding-box;
+
+    &:focus {
+    	outline-color: $focus-color;
+    }
+}
+
+.inline-input-wrapper {
+    position: relative;
+    padding-right: 1px;
+}
+
+.inline-label-wrapper {
+	width: 122px;
+}
+
+.inline-label {
+	display: inline-block;
+	padding-left: 6px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.label-text {
+	display: inline-block;
+	font-size: 16px;
+	letter-spacing: 0.1px;
+	padding-left: 5px;
+}
+
+.error-msg {
+	color: #fff;
+	background-color: $focus-color;
+	text-align: center;
+	display: block;
+	margin: 0 0 3px 122px;
+    line-height: 1.7;
+    padding: 2px 8px;
+    letter-spacing: 0.25px;
+    min-height: 28px;
+    visibility: hidden;
+
+	&.has-error {
+	    visibility: visible;
+	}    
+}
+
+@include media-breakpoint-up(sm) {
+	.inline-component {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.comments-row {
+		display: table;
+		width: 100%;
+	}	
+}
+
+.btn {
+	display: inline-block;
+    font-weight: 500;
+    font-family: $font-family-default;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 10px 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: .25rem;
+    touch-action: manipulation;
+    letter-spacing: 1px;
+    border-radius: $border-radius;
+    -webkit-appearance: button;
+    opacity: 1;
+    cursor: pointer;
+    transition: all $time ease-in-out;
+
+    &:hover {
+    	opacity: 0.75;
+    }
+
+    &:focus {
+    	outline-color: $focus-color;
+    }
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.btn-brand {
+	background-color: $brand-color;
+	color: #fff;
 }

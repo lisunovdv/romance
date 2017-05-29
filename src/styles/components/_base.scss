@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
 body {
     font-family: $font-family-default;
     font-size: 14px;
@@ -5,10 +13,25 @@ body {
 	padding: 0;
 	background: url("../images/bg-main.jpg") no-repeat;
 	background-position: top center;
+    background-size: cover;
+
+    @include media-breakpoint-up(lg) {
+       background-size: auto; 
+    }
 }
 
 a {
     color: #fff;
+    transition: color $time;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix {
+    @include clearfix;
 }
 
 .container {
@@ -30,4 +53,18 @@ a {
 
 .brand-text {
     color: $brand-color;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wrapper-inner {
+    min-height: calc(100vh - #{$footer-height});
+}
+
+.simple-link {
+    &:hover {
+        color: $brand-color;
+    }
 }

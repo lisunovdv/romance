@@ -2,6 +2,15 @@ $brand-color: #e80880;
 
 $font-family-default: Roboto, 'Open Sans', Arial, sans-serif;
 
+$link-color: #ccc;
+$link-hover-color: #6bc0ea;
+
+$focus-color:  rgba(232, 8, 128, 0.57);
+
+$border-radius: 5px;
+
+$time: 0.3s;
+
 $xs: 0;
 $sm: 480px;
 $md: 768px;
@@ -14,4 +23,6 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px
-)
+);
+
+$footer-height: 80px;
