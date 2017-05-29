@@ -1,0 +1,42 @@
+.main-part-inner {
+    padding-top: 109px;
+    padding-left: 75px;
+}
+
+.page-heading {
+    margin: 0;
+    padding: 0;
+	font-size: 36px;
+	line-height: 36px;
+	letter-spacing: 1.7px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: $font-family-default;
+	text-shadow: 5px 0 5px rgba(80, 77, 77, 0.27);
+}
+
+.interactive-section {
+    padding-top: 73px;
+    max-width: 475px;
+}
+
+.chat-ref {
+    display: block;
+    float: right;
+}
+
+.chat-link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    letter-spacing: 0.35px;
+    display: inline-block;
+    padding-right: 5px;
+
+    i {
+	    padding-right: 8px;
+	    font-size: 23px;
+	    line-height: 20px;
+    }
+}

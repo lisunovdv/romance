@@ -1,0 +1,17 @@
+$brand-color: #e80880;
+
+$font-family-default: Roboto, 'Open Sans', Arial, sans-serif;
+
+$xs: 0;
+$sm: 480px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+)

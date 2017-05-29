@@ -3,27 +3,5 @@
 //@import "node_modules/normalize-scss/sass/normalize/_import-now.scss";
 //@import "node_modules/font-awesome/scss/font-awesome.scss";
 
-body {
-	padding: 0;
-	background: url("../images/bg-main.jpg") no-repeat;
-	background-position: top center;
-}
-
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media (min-width: 768px) {
-	    width: 750px;
-    }
-
-    @media (min-width: 992px) {
-    	width: 970px;
-    }
-
-    @media (min-width: 1200px) {
-    	width: 1170px;
-    }
-}
+@import "helpers/_HELPERS.scss";
+@import "components/_COMPONENTS.scss";

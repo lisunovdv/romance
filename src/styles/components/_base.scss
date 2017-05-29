@@ -1,0 +1,33 @@
+body {
+    font-family: $font-family-default;
+    font-size: 14px;
+    color: #fff;
+	padding: 0;
+	background: url("../images/bg-main.jpg") no-repeat;
+	background-position: top center;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: 768px) {
+	    width: 750px;
+    }
+
+    @media (min-width: 992px) {
+    	width: 970px;
+    }
+
+    @media (min-width: 1200px) {
+    	width: 1170px;
+    }
+}
+
+.brand-text {
+    color: $brand-color;
+}
